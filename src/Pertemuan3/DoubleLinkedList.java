@@ -2,10 +2,6 @@ package Pertemuan3;
 
 import java.util.LinkedList;
 
-class Kereta{
-
-}
-
 public class DoubleLinkedList {
     public static void main(String[] args) {
         LinkedList<LinkedList<String>> ll = new LinkedList<>();
