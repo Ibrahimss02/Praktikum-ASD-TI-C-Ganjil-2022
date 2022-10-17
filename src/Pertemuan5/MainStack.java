@@ -1,8 +1,9 @@
 package Pertemuan5;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
-public class Main {
+public class MainStack {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
 
@@ -27,6 +28,8 @@ public class Main {
         System.out.println(stackString);
 
         Stack<Handphone> sHandphones = new Stack<>();
+        LinkedList<Handphone> lhandphone = new LinkedList<>();
+        lhandphone.add(new Handphone("Samsung", 2_000_000));
 
         sHandphones.push(new Handphone("Samsung", 2_000_000));
 
@@ -51,6 +54,4 @@ class Handphone {
     public String toString() {
         return "Merk " + merk + " dengan " + "Harga: " + harga;
     }
-
-    
 }
