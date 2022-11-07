@@ -1,38 +1,40 @@
 package Pertemuan9;
 
-class Node {
-    int data;
-    Node kiri, kanan;
+class NodeManusia {
+    String nama;
+    int umur;
+    NodeManusia kiri, kanan;
 
-    Node(int data) {
-        this.data = data;
+    NodeManusia(String nama, int umur) {
+        this.nama = nama;
+        this.umur = umur;
     }
 }
 
 class BST {
-    Node root;
+    NodeManusia root;
 
     boolean isEmpty() {
         return root == null;
     }
 
-    void insert(int newData) {
-        Node newNode = new Node(newData);
+    void insert(String newManusiaNama, int newManusiaUmur) {
+        NodeManusia newNode = new NodeManusia(newManusiaNama, newManusiaUmur);
 
         if (isEmpty()) {
             root = newNode;
         } else {
-            Node temp = root;
+            NodeManusia temp = root;
 
             while (true) {
-                if (newData > temp.data) {
+                if (newManusiaUmur > temp.umur) {
                     if (temp.kanan == null) {
                         temp.kanan = newNode;
                         break;
                     }
                     temp = temp.kanan;
                     continue;
-                } else if (newData < temp.data) {
+                } else if (newManusiaUmur < temp.umur) {
                     if (temp.kiri == null) {
                         temp.kiri = newNode;
                         break;
@@ -44,25 +46,25 @@ class BST {
         }
     }
 
-    void preorderTraversal(Node temp) {
+    void preorderTraversal(NodeManusia temp) {
         if (temp == null) return;
-        System.out.print(temp.data + ", ");
+        System.out.print("Nama " + temp.nama + " dengan umur " + temp.umur + ", ");
         preorderTraversal(temp.kiri);
         preorderTraversal(temp.kanan);
     }
 
-    void inorderTraversal(Node temp) {
+    void inorderTraversal(NodeManusia temp) {
         if (temp == null) return;
         inorderTraversal(temp.kiri);
-        System.out.print(temp.data + ", ");
+        System.out.print("Nama " + temp.nama + "dengan umur " + temp.umur + ", ");
         inorderTraversal(temp.kanan);
     }
 
-    void postorderTraversal(Node temp) {
+    void postorderTraversal(NodeManusia temp) {
         if (temp == null) return;
         postorderTraversal(temp.kiri);
         postorderTraversal(temp.kanan);
-        System.out.print(temp.data + ", ");
+        System.out.print("Nama " + temp.nama + " dengan umur " + temp.umur + ", ");
     }
 }
 
@@ -73,12 +75,12 @@ public class MainBSTManusia {
         // Check tree
         System.out.println(treeBst.isEmpty());
 
-        treeBst.insert(8);
-        treeBst.insert(3);
-        treeBst.insert(10);
-        treeBst.insert(1);
-        treeBst.insert(2);
-        treeBst.insert(9);
+        treeBst.insert("Budi", 8);
+        treeBst.insert("Glen", 3);
+        treeBst.insert("John", 10);
+        treeBst.insert("Fred", 1);
+        treeBst.insert("contoh nama",2);
+        treeBst.insert("contoh nama kedua", 9);
 
         treeBst.preorderTraversal(treeBst.root);
         System.out.println();
@@ -87,4 +89,3 @@ public class MainBSTManusia {
         treeBst.postorderTraversal(treeBst.root);
     }
 }
-
