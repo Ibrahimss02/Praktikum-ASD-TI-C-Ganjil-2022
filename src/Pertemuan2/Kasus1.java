@@ -18,7 +18,7 @@ public class Kasus1 {
         LinkedList<Integer> ll = new LinkedList<>();
 
         Predicate<Integer> filterGanjil = i -> (i % 2 != 0);
-        Predicate<Integer> filterGenap = i -> (i % 2 == 0);
+        // Predicate<Integer> filterGenap = i -> (i % 2 == 0);
 
         ll.add(3);
         ll.add(3);

@@ -40,5 +40,7 @@ public class LatihanStack {
 
         System.out.println(stack.toString());
         System.out.println(counter);
+
+        scan.close();
     }
 }

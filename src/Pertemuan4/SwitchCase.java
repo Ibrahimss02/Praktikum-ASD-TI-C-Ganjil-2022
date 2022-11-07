@@ -36,6 +36,7 @@ public class SwitchCase {
                     break;
             }
         }
+        scan.close();
     }
 }
 

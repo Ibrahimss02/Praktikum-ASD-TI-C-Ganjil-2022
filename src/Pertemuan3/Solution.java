@@ -42,6 +42,7 @@ public class Solution {
         }
 
         System.out.println(list.ll.toString());
+        scan.close();
     }
 }
 

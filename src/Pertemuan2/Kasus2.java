@@ -26,5 +26,6 @@ public class Kasus2 {
         }
 
         System.out.println(listKata.toString());
+        scan.close();
     }
 }
