@@ -1,4 +1,4 @@
-package Pertemuan7;
+package Queue;
 
 import java.util.Comparator;
 import java.util.LinkedList;

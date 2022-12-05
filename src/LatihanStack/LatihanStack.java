@@ -1,4 +1,4 @@
-package Pertemuan6;
+package LatihanStack;
 
 import java.util.Scanner;
 import java.util.Stack;

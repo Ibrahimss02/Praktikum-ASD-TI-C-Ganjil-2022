@@ -1,4 +1,4 @@
-package Pertemuan2;
+package SingleLinkedList;
 
 import java.util.LinkedList;
 import java.util.function.Predicate;

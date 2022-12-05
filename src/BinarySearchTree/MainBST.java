@@ -1,4 +1,4 @@
-package Pertemuan9;
+package BinarySearchTree;
 
 class Node {
     int data;

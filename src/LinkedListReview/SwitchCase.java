@@ -1,4 +1,4 @@
-package Pertemuan4;
+package LinkedListReview;
 
 import java.util.LinkedList;
 import java.util.Scanner;

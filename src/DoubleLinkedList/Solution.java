@@ -1,4 +1,4 @@
-package Pertemuan3;
+package DoubleLinkedList;
 
 import java.util.LinkedList;
 import java.util.Scanner;

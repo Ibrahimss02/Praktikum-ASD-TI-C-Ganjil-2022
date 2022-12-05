@@ -1,4 +1,4 @@
-package Pertemuan1;
+package ReviewOOP;
 
 public class Main{
     public static void main(String[] args){

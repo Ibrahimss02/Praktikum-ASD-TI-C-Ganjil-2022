@@ -1,4 +1,4 @@
-package Pertemuan5;
+package Stack;
 
 import java.util.LinkedList;
 import java.util.Stack;
